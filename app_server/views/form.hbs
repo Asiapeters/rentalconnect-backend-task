@@ -1,0 +1,172 @@
+<nav class="navbar navbar-expand-sm" data-bs-theme="light">
+    <div class="container"><a
+            class="navbar-brand fs-4 fw-bold d-xxl-flex align-items-xxl-center"
+            href="/"
+        ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                class="fs-2 me-2"
+                alt="RentalConnect Logo"
+            >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"
+                ></path>
+            </svg>RentalConnect</a>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+            </ul><a
+                class="btn btn-primary btn-lg fw-semibold d-xxl-flex align-items-xxl-center ms-auto"
+                role="button"
+                href="/listings"
+            ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    class="me-2"
+                >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                    ></path>
+                </svg><strong>Find a Listing</strong></a>
+        </div>
+    </div>
+</nav>
+<section class="py-4 py-xl-5 min-vh-100">
+    <div class="container-fluid d-flex justify-content-center px-5">
+        <form
+            class="text-center border rounded border-0 shadow-lg p-5"
+            style="max-width: 700px;"
+        >
+            <h2 class="fw-bold mb-3">List Your Rental</h2>
+            <h5 class="mb-4">Fill out the form below to submit your rental
+                listing</h5>
+            <div class="row gy-3 row-cols-1 text-start align-items-end">
+                <div class="col"><label
+                        class="form-label"
+                        for="title"
+                    >Title*</label><input
+                        class="form-control"
+                        type="text"
+                        id="title"
+                        maxlength="27"
+                        required=""
+                        name="title"
+                        placeholder="Enter a short title for your rental"
+                    /></div>
+                <div class="col"><label
+                        class="form-label"
+                        for="description"
+                    >Description</label><textarea
+                        class="form-control"
+                        id="description"
+                        required=""
+                        name="description"
+                        placeholder="Describe your property, amenities, and features"
+                    ></textarea></div>
+                <div class="col"><label
+                        class="form-label"
+                        for="image-1"
+                    >Image</label><input
+                        class="form-control"
+                        type="url"
+                        inputmode="url"
+                        placeholder="image.jpg"
+                    /></div>
+                <div class="col-md-3"><label
+                        class="form-label"
+                        for="propertyType"
+                    >Property Type*</label><select
+                        class="form-select"
+                        id="propertyType"
+                        required=""
+                        name="propertyType"
+                    >
+                        <option value="room" selected="">Room</option>
+                        <option value="property">Entire property</option>
+                    </select></div>
+                <div class="col-md-5"><label
+                        class="form-label"
+                        for="rentAmount"
+                    >Rent Amount*</label>
+                    <div class="input-group"><span
+                            class="input-group-text"
+                        >$</span><input
+                            class="form-control"
+                            type="text"
+                            id="rentAmount"
+                            required=""
+                            name="rentAmount"
+                            placeholder="0"
+                        /><span class="input-group-text">/ month</span></div>
+                </div>
+                <div class="col-md-4"><label
+                        class="form-label"
+                        for="numOfRooms"
+                    >Number of Rooms*</label><input
+                        class="form-control"
+                        type="number"
+                        id="numOfRooms"
+                        min="1"
+                        step="1"
+                        max="5"
+                        required=""
+                        value="1"
+                        name="numOfRooms"
+                    /></div>
+                <div class="col"><label
+                        class="form-label"
+                        for="image-2"
+                    >Location*</label><input
+                        class="form-control"
+                        type="text"
+                        id="image-2"
+                        maxlength="27"
+                        required=""
+                        name="image"
+                        placeholder="City, State"
+                    /></div>
+                <div class="col">
+                    <h5 class="fw-bold">Contact Information</h5>
+                </div>
+                <div class="col"><label
+                        class="form-label"
+                        for="image"
+                    >Name*</label><input
+                        class="form-control"
+                        type="text"
+                        id="image"
+                        maxlength="27"
+                        required=""
+                        name="image"
+                    /></div>
+                <div class="col"><label class="form-label" for="image-3">Email
+                        Address*</label><input
+                        class="form-control"
+                        type="email"
+                        inputmode="email"
+                    /></div>
+                <div class="col"><label class="form-label" for="image-4">Phone
+                        Number</label><input
+                        class="form-control"
+                        type="tel"
+                        inputmode="tel"
+                        name="contactPhone"
+                        placeholder="123-456-7890"
+                        maxlength="10"
+                    /></div>
+                <div class="col text-center"><button
+                        class="btn btn-outline-success btn-lg fw-semibold border-3"
+                        type="submit"
+                    >Submit Listing</button></div>
+            </div>
+        </form>
+    </div>
+</section>
