@@ -1,0 +1,68 @@
+[
+    {
+      "title": "Cozy Studio Near Campus",
+      "description": "A quiet and comfortable studio apartment just 5 minutes from campus. Includes utilities and Wi-Fi. Perfect for a student.",
+      "image": "listing-2.jpg",
+      "propertyType": "Entire Property",
+      "rentAmount": "850",
+      "rooms": 1,
+      "location": "Austin, TX",
+      "contactName": "Sarah Miller",
+      "contactEmail": "sarahmiller@email.com",
+      "contactPhone": "512-555-1234",
+      "featured": false
+    },
+    {
+      "title": "Spacious 2-Bdrm Apt in Town",
+      "description": "This 2-bedroom apartment offers plenty of space for roommates, with a large living area and full kitchen. Close to the bus route.",
+      "image": "listing-1.jpg",
+      "propertyType": "Entire Property",
+      "rentAmount": 1200,
+      "rooms": 2,
+      "location": "Madison, WI",
+      "contactName": "John Taylor",
+      "contactEmail": "johntaylor@email.com",
+      "contactPhone": "608-555-6789",
+      "featured": true
+    },
+    {
+      "title": "Private Room Near Campus",
+      "description": "Private room available in a shared apartment, located within walking distance to campus. Utilities and internet included.",
+      "image": "listing-3.jpg",
+      "propertyType": "Room",
+      "rentAmount": 600,
+      "rooms": 1,
+      "location": "Columbus, OH",
+      "contactName": "Emily Davis",
+      "contactEmail": "emilydavis@email.com",
+      "contactPhone": "614-555-4321",
+      "featured": true
+    },
+    {
+      "title": "Modern 1-Bdrm Apt with View",
+      "description": "Modern one-bedroom apartment with stunning city views. Features include hardwood floors and a private balcony. Perfect for a student or young professional.",
+      "image": "listing-4.jpg",
+      "propertyType": "Entire Property",
+      "rentAmount": 950,
+      "rooms": 1,
+      "location": "Los Angeles, CA",
+      "contactName": "Michael Johnson",
+      "contactEmail": "michaeljohnson@email.com",
+      "contactPhone": "323-555-9876",
+      "featured": true
+    },
+    {
+      "title": "Shared Room Near School",
+      "description": "Affordable shared room in a 3-bedroom apartment, minutes from campus. Great for students looking for a budget-friendly option.",
+      "image": "listing-5.jpg",
+      "propertyType": "Room",
+      "rentAmount": 450,
+      "rooms": 1,
+      "location": "Champaign, IL",
+      "contactName": "Rachel Green",
+      "contactEmail": "rachelgreen@email.com",
+      "contactPhone": "217-555-1122",
+      "featured": true
+    }
+  ]
+  
