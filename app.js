@@ -9,7 +9,7 @@ var handlebars = require("hbs");
 var indexRouter = require("./app_server/routes/index");
 var listingsRouter = require("./app_server/routes/listings");
 var formRouter = require("./app_server/routes/form");
-const { form } = require("./app_server/controllers/form");
+var apiRouter = require("./app_api/routes/index");
 
 var app = express();
 
@@ -20,6 +20,9 @@ app.set("view engine", "hbs");
 // register handlebars partials
 handlebars.registerPartials(__dirname + "/app_server/views/partials");
 
+// import database
+require('./app_api/models/db');
+
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -29,7 +32,8 @@ app.use(express.static(path.join(__dirname, "public")));
 // define routes
 app.use("/", indexRouter);
 app.use("/listings", listingsRouter);
-app.use("/post-listing", form);
+app.use("/post-listing", formRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
