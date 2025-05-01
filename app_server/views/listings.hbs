@@ -57,7 +57,7 @@
                         {{!-- Gets listings and renders data to cards --}}
                         {{#each rentalListings}}
                             <div class="col">
-                                <div class="card border-0"><a href="#"><img
+                                <div class="card border-0"><a href="/api/listings/{{this._id}}"><img
                                             class="rounded img-fluid listing-img"
                                             alt="white bed linen on bed"
                                             src="/img/{{ this.image }}"
