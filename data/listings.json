@@ -63,5 +63,58 @@
         "contactEmail": "rachelgreen@email.com",
         "contactPhone": "217-555-1122",
         "featured": true
-    }
+    },
+    {
+      "title": "Charming Room with Balcony",
+      "description": "A cozy room with a private balcony, perfect for a student. Located just 15 minutes from the university, with easy access to public transportation.",
+      "image": "listing-9.jpg",
+      "propertyType": "Room",
+      "rentAmount": 700,
+      "rooms": 1,
+      "location": "Seattle, WA",
+      "contactName": "Laura Kim",
+      "contactEmail": "laurakim@email.com",
+      "contactPhone": "206-555-8765",
+      "featured": false
+  },
+  {
+      "title": "Large 3-Bdrm Apt Downtown",
+      "description": "A spacious 3-bedroom apartment with modern amenities. Located in the heart of downtown, ideal for students or young professionals.",
+      "image": "listing-7.jpeg",
+      "propertyType": "Entire Property",
+      "rentAmount": 1500,
+      "rooms": 3,
+      "location": "San Francisco, CA",
+      "contactName": "David Lee",
+      "contactEmail": "davidlee@email.com",
+      "contactPhone": "415-555-2345",
+      "featured": true
+  },
+  {
+      "title": "Room in Quiet Neighborhood",
+      "description": "A peaceful room in a 2-bedroom apartment, located in a quiet neighborhood near a park. A great option for students who value tranquility.",
+      "image": "listing-6.jpg",
+      "propertyType": "Room",
+      "rentAmount": 550,
+      "rooms": 1,
+      "location": "Portland, OR",
+      "contactName": "Sophia Miller",
+      "contactEmail": "sophiamiller@email.com",
+      "contactPhone": "503-555-6789",
+      "featured": false
+  },
+  {
+      "title": "Sunny Studio Near Park",
+      "description": "A bright and sunny studio apartment with beautiful park views. Includes full kitchen, private bathroom, and free Wi-Fi.",
+      "image": "listing-8.jpg",
+      "propertyType": "Entire Property",
+      "rentAmount": 1050,
+      "rooms": 1,
+      "location": "Denver, CO",
+      "contactName": "James Wilson",
+      "contactEmail": "jameswilson@email.com",
+      "contactPhone": "303-555-1122",
+      "featured": true
+  }
+    
 ]
