@@ -3,7 +3,9 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+var handlebars = require("hbs");
 
+// routers
 var indexRouter = require("./app_server/routes/index");
 var listingsRouter = require("./app_server/routes/listings");
 var formRouter = require("./app_server/routes/form");
@@ -15,12 +17,16 @@ var app = express();
 app.set("views", path.join(__dirname, "app_server", "views"));
 app.set("view engine", "hbs");
 
+// register handlebars partials
+handlebars.registerPartials(__dirname + "/app_server/views/partials");
+
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// routes
 app.use("/", indexRouter);
 app.use("/listings", listingsRouter);
 app.use("/post-listing", form);
