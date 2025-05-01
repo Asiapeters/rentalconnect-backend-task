@@ -1,0 +1,11 @@
+.text-shadow {
+  text-shadow: 2px 2px var(--bs-light-text-emphasis);
+}
+
+.hero-image {
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
