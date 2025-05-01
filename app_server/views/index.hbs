@@ -76,9 +76,11 @@
                     <div
                         class="row gx-4 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center"
                     >
+                        {{!-- Gets listings and filters based on featured attribute --}}
                         {{#each featuredListings}}
                             {{#if this.featured}}
                                 <div class="col">
+                                    {{!-- Renders data of each listing to card --}}
                                     <div class="card border-0"><a href="#"><img
                                                 class="rounded img-fluid listing-img"
                                                 src="/img/{{this.image}}"

@@ -5,7 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var handlebars = require("hbs");
 
-// routers
+// route handlers
 var indexRouter = require("./app_server/routes/index");
 var listingsRouter = require("./app_server/routes/listings");
 var formRouter = require("./app_server/routes/form");
@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-// routes
+// define routes
 app.use("/", indexRouter);
 app.use("/listings", listingsRouter);
 app.use("/post-listing", form);

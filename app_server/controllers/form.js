@@ -1,5 +1,4 @@
 /* GET listings view */
-
 const form = (req, res) => {
     res.render("form", {
         title: "RentalConnect - List Your Rental",
@@ -7,5 +6,5 @@ const form = (req, res) => {
 };
 
 module.exports = {
-    form,
+    form
 };

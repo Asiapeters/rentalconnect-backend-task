@@ -1,3 +1,4 @@
+// reads listings json file and parses it
 var fs = require('fs');
 var featuredListings = JSON.parse(fs.readFileSync('./data/listings.json','utf8'));
 
@@ -6,7 +7,7 @@ var featuredListings = JSON.parse(fs.readFileSync('./data/listings.json','utf8')
 const index = (req, res) => {
     res.render("index", {
         title: "RentalConnect - Affordable College Rentals",
-        featuredListings
+        featuredListings // Displays featured listings data in view
     });
 };
 
