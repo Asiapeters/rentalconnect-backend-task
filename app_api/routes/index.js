@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
-const listingsController = require('../controllers/listings');
+const rentalsController = require('../controllers/rental');
 
 router
-    .route('/listings')
-    .get(listingsController.rentalList);
+    .route('/rentals')
+    .get(rentalsController.rentalList) // GET Method routes rentals
+    .post(rentalsController.rentalsAddRental); // POST Method to add rentals
 
 router
-    .route('/listings/:id')
-    .get(listingsController.rentalListByID);
+    .route('/rentals/:id')
+    .get(rentalsController.rentalListByID); // GET Method routes rentals by id
 
 module.exports = router;

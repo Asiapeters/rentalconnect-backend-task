@@ -2,7 +2,7 @@
 // var fs = require('fs');
 // var rentalListings = JSON.parse(fs.readFileSync('./data/listings.json','utf8'));
 
-const listingsEndpoint = "http://localhost:3000/api/listings";
+const rentalsEndpoint = "http://localhost:3000/api/rentals";
 const options = {
     method: "GET",
     headers: { Accept: "application/json" },
@@ -10,7 +10,7 @@ const options = {
 
 /* GET listings view */
 const listings = async function (req, res, next) {
-    await fetch(listingsEndpoint, options)
+    await fetch(rentalsEndpoint, options)
         .then((res) => res.json())
         .then((json) => {
             let message = null;
@@ -24,10 +24,10 @@ const listings = async function (req, res, next) {
             }    
             res.render("listings", {
                 title: "RentalConnect - Available Listings",
-                 rentalListings: json // Displays rental listings data in view
+                 rentals: json // Displays rental listings data in view
             });
         })
-        .catch((err) => res.status(500).send(e.message));
+        .catch((err) => res.status(500).send(err.message));
 };
 
 
