@@ -27,3 +27,4 @@ cd rentalconnect-backend-task
 ```node .\app_api\models\seed```
 ### 4. Run the App
 ```npm start```
+Once the app is running, visit http://localhost:3000 in your browser to access the RentalConnect app.
