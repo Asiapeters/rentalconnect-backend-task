@@ -4,7 +4,7 @@ RentalConnect is a web application that helps college students and property owne
 ## Tech Stack
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
-- **Templating Engine:** EJS
+- **Templating Engine:** Handlebars (HBS)
 - **Frontend:** HTML, CSS, Bootstrap
 
 ## Features
