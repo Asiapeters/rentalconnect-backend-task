@@ -18,7 +18,7 @@ RentalConnect is a web application that helps college students and property owne
 ## Setup Instructions
 ### 1. Clone the Repository
 ```
-git clone https://github.com/yourusername/rentalconnect.git
+git clone https://github.com/Asiapeters/rentalconnect-backend-task.git
 cd rentalconnect-backend-task
 ```
 ### 2. Install Dependencies
