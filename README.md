@@ -1,6 +1,5 @@
 # Rental Connect App (Backend Task Submission)
-
-## Overview
+RentalConnect is a web application that helps college students and property owners connect with affordable rental listings. The platform allows users to browse listings and submit new rental properties.
 
 ## Tech Stack
 - **Backend:** Node.js, Express
@@ -9,9 +8,22 @@
 - **Frontend:** HTML, CSS, Bootstrap
 
 ## Features
+- Browse Rental Listings: View available rental listings.
+- Submit New Listings: Property owners can submit new rental properties.
+- View Rental Details: Click on a listing to view more details.
+- API Integration: Fetch and add rental data via a REST API.
+- MongoDB integration for persistent data
+
 
 ## Setup Instructions
 ### 1. Clone the Repository
+```
+git clone https://github.com/yourusername/rentalconnect.git
+cd rentalconnect-backend-task
+```
 ### 2. Install Dependencies
-### 3. Setup Environment Variables
+```npm install```
+### 3. Seed the Database
+```node .\app_api\models\seed```
 ### 4. Run the App
+```npm start```
